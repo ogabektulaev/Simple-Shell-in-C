@@ -1,3 +1,4 @@
+```markdown
 # 🔧 Simple Shell in C
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -20,3 +21,46 @@ To compile the shell, run:
 
 ```bash
 gcc -o my_shell shell.c
+```
+
+## 🏃 Usage
+
+Run the shell:
+
+```bash
+./my_shell
+```
+
+You can execute typical shell commands. Here are some examples:
+
+```bash
+$ ls -l
+$ cd /path/to/directory
+$ cat file.txt | grep "search_term"   # Piping
+$ ls > output.txt                     # Output redirection
+$ sort < file.txt                     # Input redirection
+```
+
+## 📜 Built-in Commands
+
+| Command         | Description                     |
+|-----------------|---------------------------------|
+| `cd [directory]`| Change the current directory.    |
+| `exit`          | Exit the shell.                 |
+
+## ✨ Additional Features
+- **I/O Redirection**: Supports `>` and `<` for input and output redirection.
+- **Piping**: Allows connecting two commands using the `|` symbol.
+
+## 📚 Resources
+- **Article**: [Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/) by Stephen Brennan.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to contribute or open issues if you encounter any problems!
+
+```
